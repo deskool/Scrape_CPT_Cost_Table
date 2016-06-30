@@ -31,7 +31,9 @@ mydivs = soup.findAll('td')
 stories = []
 for hs in mydivs:
 	try:
-		cpt_costs.append(hs.font.string.encode("utf-8"))
+		d_data = hs.font.string.encode("utf-8")
+		d_data = re.sub("[^0-9a-zA-Z.]", '', d_data)
+		cpt_costs.append(d_data)
 	except:
 		try:
 			d_data = hs.font.span.string.encode("utf-8")
@@ -68,7 +70,9 @@ mydivs = soup.findAll('td')
 stories = []
 for hs in mydivs:
 	try:
-		cpt_costs.append(hs.font.string.encode("utf-8"))
+		d_data = hs.font.string.encode("utf-8")
+		d_data = re.sub("[^0-9a-zA-Z.]", '', d_data)
+		cpt_costs.append(d_data)
 	except:
 		try:
 			d_data = hs.font.span.string.encode("utf-8")
@@ -114,7 +118,9 @@ mydivs = soup.findAll('td')
 stories = []
 for hs in mydivs:
 	try:
-		cpt_costs.append(hs.font.string.encode("utf-8"))
+		d_data = hs.font.string.encode("utf-8")
+		d_data = re.sub("[^0-9a-zA-Z.]", '', d_data)
+		cpt_costs.append(d_data)
 	except:
 		try:
 			d_data = hs.font.span.string.encode("utf-8")
@@ -161,7 +167,9 @@ mydivs = soup.findAll('td')
 stories = []
 for hs in mydivs:
 	try:
-		cpt_costs.append(hs.font.string.encode("utf-8"))
+		d_data = hs.font.string.encode("utf-8")
+		d_data = re.sub("[^0-9a-zA-Z.]", '', d_data)
+		cpt_costs.append(d_data)
 	except:
 		try:
 			d_data = hs.font.span.string.encode("utf-8")
@@ -199,7 +207,9 @@ mydivs = soup.findAll('td')
 stories = []
 for hs in mydivs:
 	try:
-		cpt_costs.append(hs.font.string.encode("utf-8"))
+		d_data = hs.font.string.encode("utf-8")
+		d_data = re.sub("[^0-9a-zA-Z.]", '', d_data)
+		cpt_costs.append(d_data)
 	except:
 		try:
 			d_data = hs.font.span.string.encode("utf-8")
@@ -236,7 +246,9 @@ mydivs = soup.findAll('td')
 stories = []
 for hs in mydivs:
 	try:
-		cpt_costs.append(hs.font.string.encode("utf-8"))
+		d_data = hs.font.string.encode("utf-8")
+		d_data = re.sub("[^0-9a-zA-Z.]", '', d_data)
+		cpt_costs.append(d_data)
 	except:
 		try:
 			d_data = hs.font.span.string.encode("utf-8")
